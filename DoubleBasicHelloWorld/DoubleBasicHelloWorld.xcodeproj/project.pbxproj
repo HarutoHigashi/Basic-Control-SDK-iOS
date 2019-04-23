@@ -144,12 +144,18 @@
 				CLASSPREFIX = DR;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Double Robotics, Inc.";
+				TargetAttributes = {
+					022C40FE17AE279C00385168 = {
+						DevelopmentTeam = SBWMCNKVQ3;
+					};
+				};
 			};
 			buildConfigurationList = 022C40FA17AE279C00385168 /* Build configuration list for PBXProject "DoubleBasicHelloWorld" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 022C40F617AE279C00385168;
@@ -275,6 +281,7 @@
 		022C412317AE279C00385168 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = SBWMCNKVQ3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/..\"",
@@ -282,6 +289,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DoubleBasicHelloWorld/DoubleBasicHelloWorld-Prefix.pch";
 				INFOPLIST_FILE = "DoubleBasicHelloWorld/DoubleBasicHelloWorld-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.primetheoryDoubleBasicHelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -290,6 +299,7 @@
 		022C412417AE279C00385168 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = SBWMCNKVQ3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/..\"",
@@ -297,6 +307,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DoubleBasicHelloWorld/DoubleBasicHelloWorld-Prefix.pch";
 				INFOPLIST_FILE = "DoubleBasicHelloWorld/DoubleBasicHelloWorld-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.primetheoryDoubleBasicHelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
