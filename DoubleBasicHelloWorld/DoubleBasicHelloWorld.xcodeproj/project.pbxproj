@@ -20,6 +20,10 @@
 		022C411F17AE279C00385168 /* DRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022C411D17AE279C00385168 /* DRViewController.xib */; };
 		022C414F17AFA67700385168 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022C414E17AFA67700385168 /* ExternalAccessory.framework */; };
 		02EF8F6F18F9A8FC00916E15 /* DoubleControlSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EF8F6E18F9A8FC00916E15 /* DoubleControlSDK.framework */; };
+		6400F05D226EE52900D37840 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6400F05A226EE52900D37840 /* Default.png */; };
+		6400F05E226EE52900D37840 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6400F05B226EE52900D37840 /* Default-568h@2x.png */; };
+		6400F05F226EE52900D37840 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6400F05C226EE52900D37840 /* Default@2x.png */; };
+		6400F061226EE6A600D37840 /* CameraKitSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6400F060226EE6A600D37840 /* CameraKitSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +45,10 @@
 		022C411E17AE279C00385168 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DRViewController.xib; sourceTree = "<group>"; };
 		022C414E17AFA67700385168 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		02EF8F6E18F9A8FC00916E15 /* DoubleControlSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DoubleControlSDK.framework; path = ../DoubleBasicExample/Products/DoubleControlSDK.framework; sourceTree = "<group>"; };
+		6400F05A226EE52900D37840 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "../../../Camera-Kit-SDK/CameraKitHelloWorld/CameraKitHelloWorld/Default.png"; sourceTree = "<group>"; };
+		6400F05B226EE52900D37840 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../../Camera-Kit-SDK/CameraKitHelloWorld/CameraKitHelloWorld/Default-568h@2x.png"; sourceTree = "<group>"; };
+		6400F05C226EE52900D37840 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../../../Camera-Kit-SDK/CameraKitHelloWorld/CameraKitHelloWorld/Default@2x.png"; sourceTree = "<group>"; };
+		6400F060226EE6A600D37840 /* CameraKitSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CameraKitSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,7 @@
 				02EF8F6F18F9A8FC00916E15 /* DoubleControlSDK.framework in Frameworks */,
 				022C414F17AFA67700385168 /* ExternalAccessory.framework in Frameworks */,
 				022C410317AE279C00385168 /* UIKit.framework in Frameworks */,
+				6400F061226EE6A600D37840 /* CameraKitSDK.framework in Frameworks */,
 				022C410517AE279C00385168 /* Foundation.framework in Frameworks */,
 				022C410717AE279C00385168 /* CoreGraphics.framework in Frameworks */,
 			);
@@ -79,6 +88,7 @@
 		022C410117AE279C00385168 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6400F060226EE6A600D37840 /* CameraKitSDK.framework */,
 				02EF8F6E18F9A8FC00916E15 /* DoubleControlSDK.framework */,
 				022C414E17AFA67700385168 /* ExternalAccessory.framework */,
 				022C410217AE279C00385168 /* UIKit.framework */,
@@ -104,6 +114,9 @@
 		022C410917AE279C00385168 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6400F05B226EE52900D37840 /* Default-568h@2x.png */,
+				6400F05A226EE52900D37840 /* Default.png */,
+				6400F05C226EE52900D37840 /* Default@2x.png */,
 				022C410A17AE279C00385168 /* DoubleBasicHelloWorld-Info.plist */,
 				022C410B17AE279C00385168 /* InfoPlist.strings */,
 				022C410E17AE279C00385168 /* main.m */,
@@ -173,10 +186,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6400F05F226EE52900D37840 /* Default@2x.png in Resources */,
 				022C410D17AE279C00385168 /* InfoPlist.strings in Resources */,
+				6400F05D226EE52900D37840 /* Default.png in Resources */,
 				022C411517AE279C00385168 /* Default.png in Resources */,
 				022C411717AE279C00385168 /* Default@2x.png in Resources */,
 				022C411917AE279C00385168 /* Default-568h@2x.png in Resources */,
+				6400F05E226EE52900D37840 /* Default-568h@2x.png in Resources */,
 				022C411F17AE279C00385168 /* DRViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +301,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/..\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DoubleBasicHelloWorld/DoubleBasicHelloWorld-Prefix.pch";
@@ -303,6 +320,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/..\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DoubleBasicHelloWorld/DoubleBasicHelloWorld-Prefix.pch";

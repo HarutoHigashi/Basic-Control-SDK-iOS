@@ -22,6 +22,10 @@
 	IBOutlet UIButton *driveBackwardButton;
 	IBOutlet UIButton *driveLeftButton;
 	IBOutlet UIButton *driveRightButton;
+    
+    
+    IBOutlet UIImageView *mainImageView;
+    IBOutlet UILabel *connectionStatusLabel;
 }
 
 @end

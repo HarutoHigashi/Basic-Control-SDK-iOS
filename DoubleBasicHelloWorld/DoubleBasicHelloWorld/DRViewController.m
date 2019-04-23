@@ -8,8 +8,10 @@
 
 #import "DRViewController.h"
 #import <DoubleControlSDK/DoubleControlSDK.h>
+#import <CameraKitSDK/CameraKitSDK.h>
 
-@interface DRViewController () <DRDoubleDelegate>
+//カメラのデリゲート追加
+@interface DRViewController () <DRDoubleDelegate,DRCameraKitImageDelegate,DRCameraKitConnectionDelegate>
 @end
 
 @implementation DRViewController
@@ -17,6 +19,10 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	[DRDouble sharedDouble].delegate = self;
+    //カメラ
+    [DRCameraKit sharedCameraKit].imageDelegate = self;
+    [DRCameraKit sharedCameraKit].connectionDelegate = self;
+    [[DRCameraKit sharedCameraKit] setCameraSettingsWithArray:(cameraSetting *)kCameraSettings1280x960_30FPS];
 	NSLog(@"SDK Version: %@", kDoubleBasicSDKVersion);
 }
 
@@ -92,5 +98,18 @@
 	rightEncoderLabel.text = [NSString stringWithFormat:@"%.02f", [rightEncoderLabel.text floatValue] + [DRDouble sharedDouble].rightEncoderDeltaInches];
 	NSLog(@"Left Encoder: %f, Right Encoder: %f", theDouble.leftEncoderDeltaInches, theDouble.rightEncoderDeltaInches);
 }
+
+#pragma mark - DRCameraKitImageDelegate
+
+- (void)cameraKit:(DRCameraKit *)theKit didReceiveImage:(UIImage *)theImage sizeInBytes:(NSInteger)length {
+    mainImageView.image = theImage;
+}
+
+#pragma mark - DRCameraKitConnectionDelegate
+
+- (void)cameraKitConnectionStatusDidChange:(DRCameraKit *)theKit {
+    connectionStatusLabel.text = (theKit.isConnected) ? @"Connected" : @"Not Connected";
+}
+
 
 @end
