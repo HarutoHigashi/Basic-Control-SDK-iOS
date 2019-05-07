@@ -22,8 +22,8 @@
     //カメラ
     [DRCameraKit sharedCameraKit].imageDelegate = self;
     [DRCameraKit sharedCameraKit].connectionDelegate = self;
-    //[[DRCameraKit sharedCameraKit] setCameraSettingsWithArray:(cameraSetting *)kCameraSettings1280x960_30FPS];
-    [[DRCameraKit sharedCameraKit] setCameraSettingsWithArray:(cameraSetting *)kCameraSettingsFullRes_15FPS];
+    [[DRCameraKit sharedCameraKit] setCameraSettingsWithArray:(cameraSetting *)kCameraSettings1280x960_30FPS];
+    //[[DRCameraKit sharedCameraKit] setCameraSettingsWithArray:(cameraSetting *)kCameraSettingsFullRes_15FPS];
 	NSLog(@"SDK Version: %@", kDoubleBasicSDKVersion);
 }
 
